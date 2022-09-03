@@ -5,9 +5,10 @@
 
 .heroBanner {
   padding: 4rem 0;
-  text-align: center;
+  text-align: left;
   position: relative;
   overflow: hidden;
+  color: #ffffff;
 }
 
 @media screen and (max-width: 996px) {
