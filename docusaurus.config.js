@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Anas Ali.',
   tagline: 'Software Engineer at People Interactive(Shaadi.com)',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://anasali.netlify.app/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
