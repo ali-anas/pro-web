@@ -76,14 +76,15 @@ const config = {
           alt: 'My Site Logo',
           src: 'img/a.png',
         },
+        hideOnScroll: true,
         items: [
           {
             type: 'doc',
             docId: 'intro',
-            position: 'left',
+            position: 'right',
             label: 'Docs',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/blog', label: 'Blog', position: 'right'},
           {
             href: 'https://github.com/ali-anas',
             label: 'GitHub',
