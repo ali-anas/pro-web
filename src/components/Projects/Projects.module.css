@@ -1,0 +1,11 @@
+.zoomImageOnHover {
+  overflow: hidden;
+}
+
+.zoomImageOnHover {
+  transition: transform .5s ease;
+}
+
+.zoomImageOnHover:hover {
+  transform: scale(1.05);
+}

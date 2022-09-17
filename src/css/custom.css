@@ -6,6 +6,14 @@
 
 /* You can override the default Infima variables here. */
 :root {
+  --text-1: #fafafa;
+  --text-2: #eaeaea;
+  --text-3: #999;
+  --text-4: #888;
+  --text-5: #666;
+  --text-6: #444;
+  --text-7: #333;
+  --text-8: #111;
   --ifm-color-primary: #2e8555;
   --ifm-color-primary-dark: #29784c;
   --ifm-color-primary-darker: #277148;
@@ -16,6 +24,11 @@
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   --color-hero-bg: #242526;
+  --color-surface: #ffffff;
+  --color-bg-secondary: var(--text-1);
+  --text-primary: var(--text-8);
+  --text-secondary: var(--text-5);
+  --text-secondary-light: var(--text-3);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -29,6 +42,11 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
   --color-hero-bg: #242526;
+  --color-surface: #1e262f;
+  --color-bg-secondary: var(--color-hero-bg);
+  --text-primary: var(--text-1);
+  --text-secondary: var(--text-2);
+  --text-secondary-light: var(--text-4);
 }
 
 /* @tailwind base; */

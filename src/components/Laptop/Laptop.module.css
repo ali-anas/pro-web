@@ -29,7 +29,7 @@
 
 @keyframes slideLaptop {
   0% {
-    transform: translateX(-50%);
+    transform: translateX(50%);
     opacity: 0;
   }
   10% {

@@ -9,11 +9,13 @@
   position: relative;
   overflow: hidden;
   color: #ffffff;
+  /* min-height: 80vh; */
 }
 
 @media screen and (max-width: 996px) {
   .heroBanner {
-    padding: 2rem;
+    padding: 2rem 0;
+    text-align: center;
   }
 }
 
@@ -21,4 +23,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.heroTitle {
+  /* font-size: 3rem; */
+  color: #25c2a0;
+}
+
+.btmArrow:hover {
+  background-image: radial-gradient(circle farthest-side,rgba(235, 223, 223, 0.12),rgba(194, 186, 186, 0.12) 80%,rgba(151, 146, 146, 0) 100%);
 }
