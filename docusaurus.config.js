@@ -1,8 +1,9 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const themes = require('prism-react-renderer').themes;
+const lightCodeTheme = themes.github;
+const darkCodeTheme = themes.oneDark;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -45,13 +46,13 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
+        // docs: {
+        //   sidebarPath: require.resolve('./sidebars.js'),
+        //   // Please change this to your repo.
+        //   // Remove this to remove the "edit this page" links.
+        //   editUrl:
+        //     'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+        // },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
@@ -78,12 +79,12 @@ const config = {
         },
         hideOnScroll: true,
         items: [
-          {
-            type: 'doc',
-            docId: 'intro',
-            position: 'right',
-            label: 'Docs',
-          },
+          // {
+          //   type: 'doc',
+          //   docId: 'intro',
+          //   position: 'right',
+          //   label: 'Docs',
+          // },
           {to: '/blog', label: 'Blog', position: 'right'},
           {
             href: 'https://github.com/ali-anas',
