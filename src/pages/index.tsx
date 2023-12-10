@@ -30,7 +30,7 @@ function HomepageHeader() {
           <div className='w-full flex flex-wrap-reverse'>
             <div className="col col--8">
               <div className="w-full h-full flex flex-col justify-center">
-                <h1 className={`text-5xl md:text-6xl lg:text-8xl text-transparent bg-clip-text bg-gradient-to-r from-lime-500 via-emerald-500 to-cyan-lime-500 `}>{siteConfig.title}</h1>
+                <h1 className={`text-5xl md:text-6xl lg:text-8xl bg-clip-text bg-gradient-to-r from-lime-500 via-emerald-500 to-cyan-lime-500 `}>{siteConfig.title}</h1>
                 <p className="hero__subtitle">{siteConfig.tagline}</p>
                 <div className='w-full flex flex-nowrap flex-col md:flex-row justify-center md:justify-start items-center'>
                   {/* <button className='w-fit px-8 py-2  rounded-md border-0 cursor-pointer shadow-large mb-4'>
