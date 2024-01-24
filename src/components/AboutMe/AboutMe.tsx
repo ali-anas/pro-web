@@ -3,18 +3,24 @@ import clsx from 'clsx';
 import SectionWrapper from '@site/src/Layouts/SectionWrapper';
 import styles from './AboutMe.module.css';
 
-const aboutMeText = [`<span>Hi I'm Anas Ali, a 24 year old software engineer living in Uttarakhand, India.</span>`,
+const aboutMeText = [`<span>Hi I'm Anas Ali, a 25 year old Front-end Developer based in Mumbai, India.</span>`,
 `<span>I am working as a software engineer with People Interactive(Shaadi.com).</span>
-<span>During my time here at Shaadi.com, I've learned a lot about good practices in software development and contributed to the front-end web application of Shaadi.com and Sangam.com.</span>`,
+<span>During my time here at Shaadi.com, I've learned a lot about good practices in software development and implementing a feature from scratch and have contributed to the front-end web application of Shaadi.com and Sangam.com.</span>`,
 `<span>Prior to this role. I completed my bachelors degree in computer science from BTKIT, Dwarahat.</span>`,
-`<span>I deeply cares about value I add to the team I'm working with and I'd love to combine my passion for learning and solving problem with my software development skills to continue building personalized products for peoples and organizations.</span>`];
+`<span>I'd love to combine my passion for learning and solving problem with my software development skills to continue building personalized products for peoples and organizations.</span>`];
 
 const ExperienceData = [
   {
     title: 'People Interactive(Shaadi.com)',
-    session: 'Dec,2021 - Present',
+    session: 'Nov,2023 - Present',
+    subtitle: 'Software Engineer II',
+    description: ['Worked on improving the performance of the pages.', 'Migrated the legacy code from class based components to functional components to reduce the re-rendering and hence improving the performance of the pages.', 'Upgraded the dev tools used by developers in sangam team by upgrading the node verison and CI/CD pipelines in front-end repositories.'],
+  },
+  {
+    title: 'People Interactive(Shaadi.com)',
+    session: 'Dec,2021 - Oct, 2023',
     subtitle: 'Software Engineer I',
-    description: ['Worked with Front-End Team', 'Migrated legacy PHP pages to React', 'Increased SEO ratings of the pages from 82% to 100%'],
+    description: ['Enhanced the SEO score of shaadi.com SEO page from 82% to 100% and performance score to 97%.', 'Revamped and optimized the registration funnel of Sangam.com.', `Added support for 10 vernacular Indian languages in sangam platform.`],
   },
 ];
 
@@ -67,9 +73,9 @@ const ToggleSection = () => {
   }
   return (
     <div className='shadow-medium rounded-xl overflow-hidden bg-bgSurface'>
-      <div className='grid grid-cols-2 w-full'>
+      <div className='w-full'>
         <div onClick={() => toggle('showExperience')} className={clsx('text-xl text-center py-4 cursor-pointer text-primary', !showEducation && styles.active)} role="button">Experience</div>
-        <div onClick={() => toggle('showEducation')} className={clsx('text-xl text-center py-4 cursor-pointer text-primary', showEducation && styles.active)} role="button">Education</div>
+        {/* <div onClick={() => toggle('showEducation')} className={clsx('text-xl text-center py-4 cursor-pointer text-primary', showEducation && styles.active)} role="button">Education</div> */}
       </div>
       <div className='row p-8'>
         {showEducation ? EducationData.map((item, idx) => <ListItem {...item} key={`edu-${idx+1}`}/>) : ExperienceData.map((item, idx) => <ListItem {...item} key={`exp-${idx+1}`}/>) }
