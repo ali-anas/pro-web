@@ -14,13 +14,13 @@ const ExperienceData = [
     title: 'People Interactive(Shaadi.com)',
     session: 'Nov,2023 - Present',
     subtitle: 'Software Engineer II',
-    description: ['Worked on improving the performance of the pages.', 'Migrated the legacy code from class based components to functional components', 'Upgraded the dev tools used by developers in sangam team by upgrading the node verison and CI/CD pipelines in front-end repositories'],
+    description: ['Worked on improving the performance of the pages.', 'Migrated the legacy code from class based components to functional components to reduce the re-rendering and hence improving the performance of the pages.', 'Upgraded the dev tools used by developers in sangam team by upgrading the node verison and CI/CD pipelines in front-end repositories.'],
   },
   {
     title: 'People Interactive(Shaadi.com)',
     session: 'Dec,2021 - Oct, 2023',
     subtitle: 'Software Engineer I',
-    description: ['Enhanced the SEO score of shaadi.com SEO page from 82% to 100% and performance score to 97%', 'Revamped and optimized the registration funnel of Sangam.com', `Added support for 10 vernacular Indian languages in sangam platform`],
+    description: ['Enhanced the SEO score of shaadi.com SEO page from 82% to 100% and performance score to 97%.', 'Revamped and optimized the registration funnel of Sangam.com.', `Added support for 10 vernacular Indian languages in sangam platform.`],
   },
 ];
 
