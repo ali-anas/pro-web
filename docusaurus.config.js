@@ -8,7 +8,7 @@ const darkCodeTheme = themes.oneDark;
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Anas Ali.',
-  tagline: 'Software Engineer at People Interactive(Shaadi.com)',
+  tagline: 'Software Engineer 2 at People Interactive(Shaadi.com)',
   url: 'https://anasali.netlify.app/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -77,7 +77,7 @@ const config = {
           alt: 'My Site Logo',
           src: 'img/a.png',
         },
-        hideOnScroll: true,
+        hideOnScroll: false,
         items: [
           // {
           //   type: 'doc',

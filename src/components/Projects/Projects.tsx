@@ -60,7 +60,7 @@ function SingleProject({ project }) {
     return (
       <div className="col col--6 mb-8">
         <div className={clsx('w-full h-content rounded-md md:rounded-xl shadow-small hover:shadow-hover overflow-hidden', styles.zoomImageOnHover)}>
-          <div className='flex flex-row flex-nowrap w-full text-center py-4 px-3 items-center bg-gray-800'>
+          <div className='flex flex-row flex-nowrap w-full text-center py-4 px-3 items-center bg-[#242426]'>
             <div className='flex space-x-2'>
                 <div className='h-3 w-3 rounded-full bg-[#FF605C]'></div>
                 <div className='h-3 w-3 rounded-full bg-[#FFBD44]'></div>
