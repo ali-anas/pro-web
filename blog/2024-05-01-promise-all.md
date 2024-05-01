@@ -1,6 +1,6 @@
 ---
 slug: promise-all-polyfill
-title: Implementing Promise.all() - Polyfill
+title: Promises - Implementing Promise.all()
 authors: anas
 tags: [Promises, Javascript, Polyfill, Async]
 ---
