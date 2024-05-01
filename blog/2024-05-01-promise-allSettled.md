@@ -5,11 +5,11 @@ authors: anas
 tags: [Promises, Javascript, Polyfill, Async]
 ---
 ## What is Promise.allSettled()
-**Promise.allSettled()** is a static method that takes an iterable of elements (usually Promises) as an input, and returns a single Promise that resolves to an array of the objects that contains results of the input promises.
+**Promise.allSettled()** is a static promise concurrency method that takes an iterable of elements (usually Promises) as an input, and returns a single Promise that resolves to an array of the objects that contains results of the input promises.
 <!--truncate-->
 This returned promise will resolve when all of the input's promises have settled(either resolved or rejected).
 <!--truncate-->
-However, if an empty iterable is passed as an argument **Promise.allSettled()** retunra a promise object that has already been resolved with an empty array. 
+However, if an empty iterable is passed as an argument, then **Promise.allSettled()** retunrs a promise object that has already been resolved with an empty array. 
 <!-- truncate -->
 For each outcome object a status string is present.If a status is **fulfilled** then a **value** is present. If a status is **rejected** then a **reason** is present.
 
@@ -21,13 +21,13 @@ Promise.allSettled() method is typically used when we have multiple asynchronous
 example - 
 ```js showLineNumbers
 const p1 = Promise.resolve(2);
-const  p2 = 5;
-const  p3 = new Promise((resolve,reject) => {
+const p2 = 5;
+const p3 = new Promise((resolve,reject) => {
   setTimeout(() => resolve("response after 2s"), 2000)
 })
 
 
-const [r1, r2, r3] = await Promise.allSettled([p1,p2, p3]); 
+const result = await Promise.allSettled([p1,p2, p3]); 
 // [
   //   { status: 'fulfilled', value: 2},
   //   { status: 'fulfilled', value: 5},
@@ -38,9 +38,9 @@ const [r1, r2, r3] = await Promise.allSettled([p1,p2, p3]);
 
 ## Implementation of our own promiseAll method - 
 
-- We'll maintain an array _items_ to hold resolved response of each promise and a variable _unresolved_ to keep a count of promises that are unresolved till the point.
+- We'll maintain an array _items_ to hold resolved/rejected response of each promise and a variable _unresolved_ to keep a count of promises that are unresolved till the point.
 
-- if all of our promises are resolved then we'll return a promise that resolves with the array of resolved values.
+- if all of our promises are settled then we'll return a promise that resolves with the array of response values.
 
 
 :::note
