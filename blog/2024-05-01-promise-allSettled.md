@@ -103,7 +103,6 @@ function promiseAllSettled(iterable) {
   })
 
   const result = await promiseAllSettled([p1, p2, p3]); 
-
   // output - 
   // [
   //   { status: 'fulfilled', value: 2},
@@ -120,9 +119,7 @@ function promiseAllSettled(iterable) {
   });
   const p3 =  6;
 
-
   const result = await promiseAllSettled([p1, p2, p3]);
-
   // output - 
   // [
   //   { status: 'fulfilled', value: 3},
