@@ -1,8 +1,8 @@
 ---
 slug: promise-all-polyfill
-title: Implementing Promise.all() - Polyfill
+title: Promises - Implementing Promise.all()
 authors: anas
-tags: [Promises, Javascript, Polyfill]
+tags: [Promises, Javascript, Polyfill, Async]
 ---
 ## What is Promise.all()
 **Promise.all()** is a static method that takes an iterable of elements (usually Promises) as an input, and returns a single Promise that resolves to an array of the results of the input promises.
@@ -67,7 +67,7 @@ function promiseAll(iterable) {
         items[idx] = res;
         unresolved -= 1;
         if(unresolved === 0) {
-          return resolve(items);
+          resolve(items);
         }
       })
       .catch(err => {
