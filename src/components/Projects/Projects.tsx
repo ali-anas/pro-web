@@ -8,6 +8,18 @@ import styles from './Projects.module.css';
 const ProjectsData = [
     {
       id: 1,
+      title: "Path Finder",
+      author: ["Anas Ali"],
+      intro: "A shortest path visualizer for a 2d grid.",
+      github_url: "https://github.com/ali-anas/algo-visualizer",
+      live_url: "https://algo-visualizer-amber-beta.vercel.app/",
+      youtube_url: null,
+      techStack: ["ReactJS", 'Redux', 'Scss'],
+      overview: "",
+      img_url: '/img/projects/path-finder.png',
+    },
+    {
+      id: 2,
       title: "Trivia API",
       author: ["Anas Ali"],
       intro: "Restful APIs for web based application to play Trivia(Question and answer) like game.",
@@ -19,7 +31,7 @@ const ProjectsData = [
       img_url: '/img/projects/Trivia-project.png',
     },
     {
-      id: 2,
+      id: 3,
       title: "Graph Visualizer",
       author: ["done by following CS 106L website"],
       intro: "This simple piece of software helps to produce a good drawing for a given arbitrary graph using Graph drawing algorithm.",
@@ -31,7 +43,7 @@ const ProjectsData = [
       img_url: '/img/projects/graph-project.png',
     },
     {
-      id: 3,
+      id: 4,
       title: "Fyyur",
       author: ["Anas Ali"],
       intro: "Fyyur is a musical venue and artist booking site that facilitates the discovery and bookings of shows between local performing artists and venues.",
@@ -43,7 +55,7 @@ const ProjectsData = [
       img_url: '/img/projects/Fyyur-project.png',
     },
     {
-      id: 4,
+      id: 5,
       title: "Archive of Code",
       author: ["Anas Ali"],
       intro: "A compilation of various code snippets and programs I have written. Includes interesting data structures, algorithms, and interview problems.",
