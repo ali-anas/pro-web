@@ -21,3 +21,5 @@ The Promise class offers four static methods to facilitate async task concurrenc
 4. **[Promise.race()](./4.md)** <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Settles when any of the promises settles. In other words, fulfills when any of the promises fulfills, rejects when any of the promises rejects.
 
+- **[setTimeout and clearTimeout polyfill](./5.md)**
+

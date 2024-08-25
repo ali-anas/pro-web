@@ -2,6 +2,11 @@
 - This document contains some of the blogs that I have read and I stumble upon on my weekends and free time.
 
 - My latest interest(apart from preparing for interviews 😅) is exploring Collaborative Text Editors.
+
+### Learning Collaborative Softwares and CRDTs
+  - Conclave case study - [Collaborative Text Editor](https://conclave-team.github.io/conclave-site/)
+  - CRDT - [Martin Kleppmann](https://youtu.be/x7drE24geUw?si=vNkEQn4gFFdqFXBD)
+
 ### Design (UI/UX)
 - How I design - (Sravya)
   - [How I design - From Start](https://medium.com/swiggydesign/how-i-design-from-the-start-96e467ae2883)
@@ -9,10 +14,6 @@
   - [How I design - For the Forgetful Mind](https://sravya02ch.medium.com/how-i-design-for-the-forgetful-mind-c1ed4198a877)
   - [How I design - Eye vs Mind](https://sravya02ch.medium.com/how-i-design-eye-vs-mind-7dbef1d3d0b9)
 - Usability Principles - [Standford article](https://improvement.stanford.edu/resources/usability-principles)
-
-### Learning Collaborative Softwares and CRDTs
-  - Conclave case study - [Collaborative Text Editor](https://conclave-team.github.io/conclave-site/)
-  - CRDT - [Martin Kleppmann](https://youtu.be/x7drE24geUw?si=vNkEQn4gFFdqFXBD)
 
 ### Web Storage
   - [storage for web](https://web.dev/articles/storage-for-the-web)
