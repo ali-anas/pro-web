@@ -83,7 +83,7 @@ const config = {
             type: 'doc',
             docId: 'intro',
             position: 'right',
-            label: 'Shelf',
+            label: 'My Shelf',
           },
           {to: '/blog', label: 'Blog', position: 'right'},
           {

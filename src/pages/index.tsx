@@ -94,10 +94,10 @@ function HomepageHeader() {
 const footer = {
     links: [
       {
-        title: 'My shelf',
+        title: 'Shelf',
         items: [
           {
-            label: 'Shelf',
+            label: 'My Shelf',
             to: '/docs/intro',
           },
         ],

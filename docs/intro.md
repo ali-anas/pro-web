@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Shelf Intro
+# My Shelf
 
 I'll document all my front-end learnings here, along with the related code snippets.
 
