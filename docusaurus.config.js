@@ -79,12 +79,12 @@ const config = {
         },
         hideOnScroll: false,
         items: [
-          // {
-          //   type: 'doc',
-          //   docId: 'intro',
-          //   position: 'right',
-          //   label: 'Docs',
-          // },
+          {
+            type: 'doc',
+            docId: 'intro',
+            position: 'right',
+            label: 'My Shelf',
+          },
           {to: '/blog', label: 'Blog', position: 'right'},
           {
             href: 'https://github.com/ali-anas',

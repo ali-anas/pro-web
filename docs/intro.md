@@ -2,9 +2,9 @@
 sidebar_position: 1
 ---
 
-# Docs Intro
+# My Shelf
 
-Here I'll keep all my documentation and learnings related stuff
+I'll document all my front-end learnings here, along with the related code snippets.
 
 <!-- Let's discover **Docusaurus in less than 5 minutes**.
 
