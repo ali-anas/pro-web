@@ -1,0 +1,98 @@
+---
+slug: bind-polyfill
+title: Function.prototype.bind implementation
+authors: anas
+tags: [Function, Javascript, Polyfill, Prototype]
+---
+## What is bind method
+According to MDN definition the **bind()** method of Function instances creates a new function that, when called, calls this function with its this keyword set to the provided value, and a given sequence of arguments preceding any provided when the new function is called.
+<!--truncate-->
+**Args**
+- It takes the `thisArg` as the first argument 
+- and the arguments(optional, `arg1...argN`) to prepend to arguments provided to the bound function when invoking func.
+
+<!--truncate-->
+**Return value**
+- Arguments to prepend to arguments provided to the bound function when invoking func
+
+Syntax:
+```js
+bind(thisArg)
+bind(thisArg, arg1)
+bind(thisArg, arg1, arg2)
+bind(thisArg, arg1, arg2, /* …, */ argN)
+```
+
+example - 
+```js showLineNumbers
+const module = {
+  x: 42,
+  getX: function () {
+    return this.x;
+  },
+};
+
+const unboundGetX = module.getX;
+console.log(unboundGetX()); // The function gets invoked at the global scope
+// Expected output: undefined
+
+const boundGetX = unboundGetX.bind(module);
+console.log(boundGetX());
+// Expected output: 42
+
+```
+
+
+## Implementation of our own bind method - 
+
+### 1. Implementing using Call/Apply
+
+```javascript showLineNumbers
+Function.prototype.bind = function(thisArg, ...args1) {
+  const originalFn = this;
+  return function(...args2) {
+    return originalFn.apply(thisArg, [...args1, ...args2]);
+  }
+}
+```
+
+### 2. Implementing using Symbol
+
+What if we don't want to use call/apply?
+
+If we carefully see what bind method do is it bound the environment of original function within the `thisArg` passed to it and return a new function which when called with arguments calls the original function within that environment with the arguments provided.
+
+We can implement this functionality using Symbol.
+<!--truncate-->
+Symbol would help us get the key which would be unique and do not clash with any existing properties on the object.
+
+```javascript showLineNumbers
+Function.prototype.bind = function(thisArg, ...args1) {
+  const originalFn = this;
+
+  // A unique symbol is created to use as a temporary property name.
+  // Symbols are unique and do not clash with any existing properties on the object.
+  const key = Symbol('func');
+
+  let ctx = thisArg ?? window;
+
+  // This ensures that ctx is always an object. 
+  // If a primitive value (like a string or number) is passed, it is converted to its corresponding object type
+  ctx = Object(ctx);
+
+  Object.defineProperty(ctx, key, {
+    // this originalFn should not be directly enumerable/accessible in thisArg environment
+    enumerable: false,
+    value: originalFn,
+  })
+
+  return function(...args2) {
+    return ctx[key](...args1, ...args2);
+  }
+}
+```
+
+:::info
+You can read more about Function.prototype.bind() on mdn docs [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind)
+:::
+
