@@ -8,7 +8,7 @@ const darkCodeTheme = themes.oneDark;
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Anas Ali.',
-  tagline: 'Software Engineer 2 at People Interactive(Shaadi.com)',
+  tagline: 'Software Engineer(UI) at Phonepe',
   url: 'https://anasali.netlify.app/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
