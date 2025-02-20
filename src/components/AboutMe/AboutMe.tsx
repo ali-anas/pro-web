@@ -3,18 +3,25 @@ import clsx from 'clsx';
 import SectionWrapper from '@site/src/Layouts/SectionWrapper';
 import styles from './AboutMe.module.css';
 
-const aboutMeText = [`<span>Hi I'm Anas Ali, a 25 year old Front-end Developer based in Mumbai, India.</span>`,
-`<span>I am working as a software engineer with People Interactive(Shaadi.com).</span>
-<span>During my time here at Shaadi.com, I've learned a lot about good practices in software development and implementing a feature from scratch and have contributed to the front-end web application of Shaadi.com and Sangam.com.</span>`,
-`<span>Prior to this role. I completed my bachelors degree in computer science from BTKIT, Dwarahat.</span>`,
+const aboutMeText = [`<span>Hi I'm Anas Ali, a 26 year old Software Engineer based in Pune, India.</span>`,
+`<span>I am currently working as a Software Engineer with the Online Merchants team at PhonePe, where I contribute to building web solutions for merchants and supporting the organization in enhancing its offerings.</span>`,
+`<span>Prior to that, I have worked at People Interactive(Shaadi.com) as a software engineer.</span>
+<span>During my time at Shaadi.com, I had contributed to the front-end web application of Shaadi.com and Sangam.com.</span>`,
+`<span>I have completed my bachelors degree in computer science from BTKIT, Dwarahat.</span>`,
 `<span>I'd love to combine my passion for learning and solving problem with my software development skills to continue building personalized products for peoples and organizations.</span>`];
 
 const ExperienceData = [
   {
+    title: 'Phonepe',
+    session: 'Oct,2024 - Present',
+    subtitle: 'Software Engineer(UI)',
+    description: ['Building Partners Experience at Phonepe.', 'Developed a card checkout web SDK from scratch for non-PCI DSS compliant merchants, enabling them to accept card payments directly through their own payment pages.'],
+  },
+  {
     title: 'People Interactive(Shaadi.com)',
-    session: 'Nov,2023 - Present',
+    session: 'Nov,2023 - Sept,2024',
     subtitle: 'Software Engineer II',
-    description: ['Worked on improving the performance of the pages.', 'Migrated the legacy code from class based components to functional components to reduce the re-rendering and hence improving the performance of the pages.', 'Upgraded the dev tools used by developers in sangam team by upgrading the node verison and CI/CD pipelines in front-end repositories.'],
+    description: ['Worked on improving the performance of the pages.', 'Migrated the legacy code from class based components to functional components to reduce the re-rendering and hence improving the performance of the pages.', 'Upgraded the dev tools used by developers in sangam team by upgrading the node verison and CI/CD pipelines in front-end repositories.', `Developed highly optimized and performant UI components for the search module of Sangam.com.`],
   },
   {
     title: 'People Interactive(Shaadi.com)',
@@ -90,7 +97,7 @@ const AboutMe = () => {
       <div className="container">
         <div className="row">
           <div className="col">
-            {aboutMeText.map((text, idx) => <p key={`text-${idx+1}`} className="text-lg text-textSecondary text-left mx-auto leading-8 max-w-prose tracking-wide" dangerouslySetInnerHTML={{__html: text}}></p>)}
+            {aboutMeText.map((text, idx) => <p key={`text-${idx+1}`} className="text-base text-textSecondary text-left mx-auto leading-8 max-w-prose tracking-wide" dangerouslySetInnerHTML={{__html: text}}></p>)}
             
           </div>
         </div>
